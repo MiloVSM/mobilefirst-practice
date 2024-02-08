@@ -36,9 +36,37 @@
             </ul>
 
             <img src="./assets/Logo.svg" alt="Logo da Alura Books" class="container__image">
+            <h1 class="container__title"><b class="container__title-bold">Alura</b>books</h1>
         </div>
+
+        <ul class="header-options">
+            <input type="checkbox" id="options-menu" class="options__switch">
+            <label for="options-menu">
+                <li class="options__item">Categorias</li>
+            </label>
+            <ul class="menu-list">
+                <li class="menu-list__item">
+                    <a href="#" class="menu-list__link">Programação</a>
+                </li>
+                <li class="menu-list__item">
+                    <a href="#" class="menu-list__link">Front-End</a>
+                </li>
+                <li class="menu-list__item">
+                    <a href="#" class="menu-list__link">Infraestrutura</a>
+                </li>
+                <li class="menu-list__item">
+                    <a href="#" class="menu-list__link">Business</a>
+                </li>
+                <li class="menu-list__item">
+                    <a href="#" class="menu-list__link">Design & UX</a>
+                </li>
+            </ul>
+            <li class="options__item"><a class="options__link" href="#">Favoritos</a></li>
+            <li class="options__item"><a class="options__link" href="#">Minha Estante</a></li>
+        </ul>
+        
         <div class="container">
-            <a href="#"><img src="./assets/Favoritos.svg" alt="Meus Favoritos" class="container__image"></a>
+            <a href="#"><img src="./assets/Favoritos.svg" alt="Meus Favoritos" class="container__image container__image-fav"></a>
             <a href="#"><img src="./assets/Compras.svg" alt="Sacola de compras" class="container__image"></a>
             <a href="#"><img src="./assets/Usuario.svg" alt="Meu perfil de usuário" class="container__image"></a>
         </div>
@@ -158,8 +186,10 @@
     </section>
 
     <section class="newsletter">
-        <h2 class="newsletter__title">Fique por dentro das novidades!</h2>
-        <p class="newsletter__description">Atualizações de e-books, novos livros, promoções e outros.</p>
+        <div class="newsletter__description">
+            <h2 class="newsletter__title">Fique por dentro das novidades!</h2>
+            <p class="newsletter__text">Atualizações de e-books, novos livros, promoções e outros.</p>
+        </div>
         <input type="email" placeholder="Cadastre seu e-mail" class="newsletter__email">
     </section>
     <hr/>
