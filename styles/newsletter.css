@@ -64,3 +64,26 @@
         width: 30%;
     }
 }
+
+@media screen and (min-width: 1280px) {
+    .newsletter {
+        padding: 4em 10vw 3em 10vw;
+    }
+
+    .newsletter__description {
+        margin-right: 2em;
+        width: 34%;
+    }
+
+    .newsletter__text {
+        font-size: 1em; /* 16px */
+        font-weight: 300;
+        margin: 0.3em 0;
+    }
+}
+
+@media screen and (min-width: 1728px) {
+    .newsletter__description {
+        width: 29%;
+    }
+}

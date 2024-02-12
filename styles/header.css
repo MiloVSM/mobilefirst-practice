@@ -10,7 +10,7 @@
 .header {
     background-color: var(--white);
     display: flex;
-    justify-content: space-between!important;
+    justify-content: space-between;
     align-items: center;
     position: relative;
 }
@@ -18,6 +18,10 @@
 .container {
     display: flex;
     align-items: center;
+}
+
+.container__title {
+    padding-top: .3em;
 }
 
 .container__image {
@@ -66,6 +70,18 @@
     display: none;
 }
 
+.container__text {
+    display: none;
+}
+
+.container__button:checked~ .container__label > .header__menu-hamburguer {
+    background-image: url("../assets/MenuAberto.svg");
+}
+
+.container__button:checked~ .container__label {
+    background: var(--blue-gradient);
+}
+
 @media screen and (min-width: 1024px) {
    .container__title,
    .container__title-bold {
@@ -103,11 +119,72 @@
    }
 
    .options__switch {
-    display: none
+    display: none;
+    cursor: default;
 }
 
    .options__switch:checked ~ .menu-list {
         display: block;
         width: auto;
    }
+
+   .options__switch:checked~ .options__label > .options__item {
+        color: var(--white);
+        background: var(--blue-gradient);
+    }
+
+    .options__item {
+        cursor: pointer;
+        padding: 2em 1em;
+    }
+
+    .options__item:hover {
+        background: var(--blue-gradient);
+        -webkit-text-fill-color: var(--white);
+    }
+
+    .options__item:hover > .options__link {
+        -webkit-text-fill-color: var(--white);
+    }
+
+    .menu-list__item:hover {
+        background: var(--blue-gradient);
+    }
+
+    .menu-list__item:hover > .menu-list__link {
+        -webkit-text-fill-color: var(--white);
+        text-decoration: none;
+    }
+
+}
+
+@media screen and (min-width: 1280px) {
+    .container {
+        margin: 0 2em;
+    }
+
+    .header-options {
+        margin-right: auto;
+   }
+
+
+    .container__link {
+        display: flex;
+        text-decoration: none;
+        color: black;
+        align-items: center;
+        font-size: 1.25em;
+        margin: 0 0.5em;
+    }
+}
+
+
+@media screen and (min-width: 1728px) {
+    .container {
+        margin: 0 3.5em;
+    }
+
+   .container__text {
+    display: block;
+    }
 }

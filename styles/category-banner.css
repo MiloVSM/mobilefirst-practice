@@ -41,11 +41,34 @@
     }
 
     .categories__item {
-        padding: 2em;
+        padding: 1.5    em;
     }
 
     .category__link {
         font-size: 1.5em;
     }
+}
 
+@media screen and (min-width:1280px) {
+    .categories {
+        padding: 2em 20vw 3em 20vw;
+    }
+
+    .categories__title {
+        font-size: 1.5em;
+    }
+
+    .category__link {
+        font-size: 1em;
+    }
+}
+
+@media screen and (min-width:1728px) {
+    .categories {
+        padding: 2em 20vw 3em 20vw;
+    }
+
+    .categories__title {
+        font-size: 2em;
+    }
 }
